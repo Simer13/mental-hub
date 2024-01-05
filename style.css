@@ -255,6 +255,85 @@ header .fas.fa-bars
     font-size: 1.3rem;
 }
 
+.services .box-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.services .box-container .box
+{
+    flex: 1 1 calc(25% - 1.5rem);
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+}
+
+.services .box-container .box .image
+{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.services .box-container .box .image img{
+    height: 25rem;
+}
+
+.services .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.services .box-container .box .image .icons
+{
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.services .box-container .box .image:hover .icons
+{
+    bottom: 0;
+}
+
+.services .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: var(--cream);
+    color: #fff;
+}
+
+.services .box-container .box .image .icons a:hover
+{
+    background: brown;
+}
+
+
+.services h1.heading {
+    color: rgb(105, 44, 44);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services h1.heading span
+{
+    color: brown;
+}
+
+
+.services h3 {
+    color:  #8c573b;
+}
+
+
 
 @media (max-width:991px)
 {
