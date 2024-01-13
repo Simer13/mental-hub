@@ -334,6 +334,80 @@ header .fas.fa-bars
 }
 
 
+.chatbot-container {
+    margin-top: 20px;
+}
+
+.chatbot {
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+    width: 420px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 128px rgba(0,0,0,0.1),
+    0 32px 64px -48px gba(0,0,0,0.5);
+}
+
+.chat-header {
+    background-color: crimson;
+  
+    padding: 16px 0;
+    text-align: center;
+}
+
+.chat-body {
+    padding: 15px 20px 70px;
+    max-height: 510px;
+    overflow-y: auto;
+}
+
+.user-message {
+    color: #ecf0f1;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0 10px;
+    margin-bottom: 5px;
+    background: red;
+}
+
+.chatbot-response {
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px 10px 10px 0;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: brown;
+}
+
+
 
 @media (max-width:991px)
 {
