@@ -333,7 +333,6 @@ header .fas.fa-bars
     color:  #8c573b;
 }
 
-
 .chatbot-container {
     margin-top: 20px;
 }
@@ -406,7 +405,6 @@ button {
 button:hover {
     background-color: brown;
 }
-
 
 
 @media (max-width:991px)

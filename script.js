@@ -3,7 +3,7 @@ const chatBody = document.querySelector(".chat-body");
 const txtInput = document.querySelector("#txtInput");
 const send = document.querySelector(".send");
 
-send.addEventListener("click", ()=> renderUserMessage());
+send.addEventListener("click", () => renderUserMessage());
 
 const renderUserMessage = () => {
     const userInput = txtInput.value;
@@ -11,7 +11,7 @@ const renderUserMessage = () => {
 };
 
 const renderMessageEle=(txt) =>{
-    const renderMessageEl= document.createElement("div");
+    const renderMessageEle= document.createElement("div");
     const txtNode = document.createTextNode(txt);
     messageEle.classList.add("user-message");
     messageEle.append(txtNode);
