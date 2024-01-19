@@ -1,3 +1,4 @@
+import chatBotService from "./chatbotservice.js";
 const chatBody = document.querySelector(".chat-body");
 const txtInput = document.querySelector("#txtInput");
 const send = document.querySelector(".send");
@@ -22,7 +23,7 @@ const renderUserMessage = () => {
 
 const renderChatbotResponse = (userInput) => {
   const res = getChatbotResponse(userInput);
-  renderMessageEle(res);
+  
 };
 
 const renderMessageEle = (txt, type) => {
@@ -38,9 +39,12 @@ const renderMessageEle = (txt, type) => {
 };
 
 const getChatbotResponse = (userInput) => {
-  return responseObj[userInput] == undefined
-    ? "Please try something else"
-    : responseObj[userInput];
+  chatBotService
+  .getBotResponse(userInput)
+  .then((response) => {
+    renderMessageEle(response);
+  })
+  .catch((error) => {});
 };
 
 const setScrollPosition = () => {
